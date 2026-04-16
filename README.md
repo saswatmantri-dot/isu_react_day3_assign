@@ -1,18 +1,50 @@
-# React + Vite
+## Brand page
+This is project was built using Vite with Js and React compiler
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Layout
+The UI is divides into 3 sections : Main, Header and Footer.
 
-Currently, two official plugins are available:
+## Functionality
+The application demonstrates various styling strategies available in React.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Folder Structure
 
-## React Compiler
+The project starts from the Day3App.jsx file and global css isloaded from index.css
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+1. src/components - All the components are present here.
+2. The common folder contains all the reusable components used throught the project.
 
-Note: This will impact Vite dev & build performances.
+```bash
+day3_assign/
+├── public/                 # Static assets (favicons, manifest, etc.)
+├── src/                    # Main application source code
+│   ├── assets/             # Global images, fonts, and static files
+│   ├── components/         # Reusable UI components
+│   │   ├── layout/         # Structural components
+│   │   │   ├── Footer.jsx
+│   │   │   └── Header.jsx
+│   │   ├── DynamicLink.jsx
+│   │   ├── InputBox.jsx
+│   │   └── StatusCard.jsx
+│   ├── cssmodules/         # Component-specific CSS modules
+│   │   ├── Footer.module.css
+│   │   └── Header.module.css
+│   ├── App.css             # Main application styles
+│   ├── App.jsx             # Root component wrapper
+│   ├── Day3App.jsx         # Entry point for Day 3 assignment logic
+│   ├── index.css           # Global CSS resets and styles
+│   └── main.jsx            # Application entry point (Vite)
+├── .gitignore              # Files and folders to ignore in Git
+├── eslint.config.js        # ESLint configuration
+├── index.html              # HTML template
+├── package.json            # Project dependencies and scripts
+├── package-lock.json       # Locked versions of dependencies
+├── README.md               # Project documentation
+└── vite.config.js          # Vite build configuration
+```
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Browser views
+![alt text](image.png)
+![alt text](image-1.png)
+![alt text](image-2.png)
+![alt text](image-3.png)
