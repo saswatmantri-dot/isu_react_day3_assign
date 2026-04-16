@@ -1,0 +1,11 @@
+:root {
+  --brand-primary: #6200ee;
+}
+
+
+.btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border-radius : 4px;
+}
